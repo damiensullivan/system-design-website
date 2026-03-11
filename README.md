@@ -6,230 +6,181 @@ For each topic we will provide:
 - **The benefits, drawbacks and trade-offs** to be aware of when using this technology  
 - **Why it is important or useful in practice**
 
-Scalability,
-
-Availability,
-
-Reliability,
-
-Latency vs Throughput vs Bandwidth,
-
-Client-Server Architecture,
-
-Databases,
-
-SQL vs NoSQL,
-
-Load Balancing,
-
-Load Balancing Algorithms,
-
-Caching,
-
-Cache Invalidation,
-
-CDN,
-
-DNS,
-
-API Design,
-
-REST APIs,
-
-Authentication vs Authorization,
-
-Session-based vs Token-based Authentication,
-
-OAuth/OAuth2/OpenID Connect,
-
-JWT,
-
-Rate Limiting,
-
-Single Point of Failure,
-
-High Availability vs Fault Tolerance,
-
-CAP Theorem,
-
-Consistency Models,
-
-Data Replication,
-
-Read Replicas,
-
-Sharding,
-
-Data Partitioning,
-
-Consistent Hashing,
-
-Denormalization,
-
-Indexing,
-
-Microservices Architecture,
-
-Monolithic Architecture,
-
-Serverless Architecture,
-
-Event-Driven Architecture,
-
-Message Queues,
-
-Pub/Sub,
-
-Synchronous vs Asynchronous Communication.
-
-WebSockets
-
-API Gateways
-
-Distributed Cache
-
-Cache Eviction Policies
-
-Proxy vs Reverse Proxy
-
-HTTP vs HTTPS
-
-TCP vs UDP
-
-OSI Model
-
-TLS/SSL
-
-DNS Load Balancing
-
-Anycast Routing
-
-Object Storage
-
-Distributed File Systems
-
-Block vs File vs Object Storage
-
-Data Compression
-
-ACID vs BASE
-
-Network Partitions
-
-Split-Brain Problem
-
-Heartbeats
-
-Leader Election
-
-Consensus Algorithms
-
-Quorum
-
-Paxos Algorithm
-
-Raft Algorithm
-
-Gossip Protocol
-
-Clock Synchronization Problem
-
-Logical Clocks
-
-Lamport Timestamps
-
-Vector Clocks
-
-Distributed Transactions
-
-Two-Phase Commit
-
-SAGA Pattern
-
-Outbox Pattern
-
-Three-Phase Commit
-
-Delivery Semantics
-
-Change Data Capture
-
-Long Polling
-
-Server-Sent Events
-
-Webhooks,
-
-WebRTC,
-
-CQRS,
-
-Event Sourcing,
-
-Service Discovery,
-
-Circuit Breaker Pattern,
-
-Bulkhead Pattern,
-
-Strangler Fig Pattern,
-
-Backend for Frontend.
-
-Sidecar Pattern,
-
-Service Mesh,
-
-Observability,
-
-Logging,
-
-Metrics,
-
-Distributed Tracing,
-
-Correlation IDs,
-
-Full-Text Search Engine,
-
-Time Series Database,
-
-Vector Database,
-
-Materialized Views,
-
-Query Optimization,
-
-Connection Pooling,
-
-Cache Stampede,
-
-Cache Warming,
-
-PACELC Theorem,
-
-Security Secrets Management,
-
-Role-Based Access Control,
-
-Single Sign-On,
-
-Checksums,
-
-Bloom Filter,
-
-B-trees and B+ trees,
-
-LSM Tree,
-
-Merkle Tree,
-
-HyperLogLog,
-
-Batch vs Stream Processing,
-
-ETL Pipelines,
-
-MapReduce,
-
-Erasure Coding.
+## 1. Core System Design Principles
+- Scalability
+- Availability
+- Reliability
+- Latency vs Throughput vs Bandwidth
+- Single Point of Failure
+- High Availability vs Fault Tolerance
+- Network Partitions
+- Split-Brain Problem
+- PACELC Theorem
+- CAP Theorem
+
+---
+
+## 2. Architecture Patterns
+- Client-Server Architecture
+- Monolithic Architecture
+- Microservices Architecture
+- Serverless Architecture
+- Event-Driven Architecture
+- Backend for Frontend
+- Sidecar Pattern
+- Service Mesh
+- Strangler Fig Pattern
+- Circuit Breaker Pattern
+- Bulkhead Pattern
+
+---
+
+## 3. API & Communication
+- API Design
+- REST APIs
+- Synchronous vs Asynchronous Communication
+- WebSockets
+- Webhooks
+- Long Polling
+- Server-Sent Events
+- WebRTC
+- API Gateways
+
+---
+
+## 4. Networking Fundamentals
+- OSI Model
+- TCP vs UDP
+- HTTP vs HTTPS
+- TLS/SSL
+- DNS
+- DNS Load Balancing
+- Anycast Routing
+- Proxy vs Reverse Proxy
+
+---
+
+## 5. Load Distribution & Traffic Management
+- Load Balancing
+- Load Balancing Algorithms
+- Rate Limiting
+- CDN
+
+---
+
+## 6. Caching Systems
+- Caching
+- Distributed Cache
+- Cache Invalidation
+- Cache Eviction Policies
+- Cache Stampede
+- Cache Warming
+
+---
+
+## 7. Databases & Storage
+- Databases
+- SQL vs NoSQL
+- ACID vs BASE
+- Object Storage
+- Distributed File Systems
+- Block vs File vs Object Storage
+- Time Series Database
+- Vector Database
+- Full-Text Search Engine
+
+---
+
+## 8. Database Scaling & Data Distribution
+- Data Replication
+- Read Replicas
+- Sharding
+- Data Partitioning
+- Consistent Hashing
+- Denormalization
+- Materialized Views
+- Indexing
+- Query Optimization
+- Connection Pooling
+
+---
+
+## 9. Data Structures Used in Systems
+- B-trees and B+ trees
+- LSM Tree
+- Bloom Filter
+- Merkle Tree
+- HyperLogLog
+
+---
+
+## 10. Distributed Systems Coordination
+- Heartbeats
+- Leader Election
+- Consensus Algorithms
+- Quorum
+- Paxos Algorithm
+- Raft Algorithm
+- Gossip Protocol
+
+---
+
+## 11. Time & Ordering in Distributed Systems
+- Clock Synchronization Problem
+- Logical Clocks
+- Lamport Timestamps
+- Vector Clocks
+
+---
+
+## 12. Distributed Data Consistency
+- Consistency Models
+- Distributed Transactions
+- Two-Phase Commit
+- Three-Phase Commit
+- SAGA Pattern
+- Outbox Pattern
+- Delivery Semantics
+- Change Data Capture
+- CQRS
+- Event Sourcing
+
+---
+
+## 13. Messaging & Event Streaming
+- Message Queues
+- Pub/Sub
+
+---
+
+## 14. Data Processing Systems
+- Batch vs Stream Processing
+- ETL Pipelines
+- MapReduce
+
+---
+
+## 15. Observability & Monitoring
+- Observability
+- Logging
+- Metrics
+- Distributed Tracing
+- Correlation IDs
+
+---
+
+## 16. Security & Identity
+- Authentication vs Authorization
+- Session-based vs Token-based Authentication
+- OAuth / OAuth2 / OpenID Connect
+- JWT
+- Security Secrets Management
+- Role-Based Access Control
+- Single Sign-On
+
+---
+
+## 17. Data Integrity & Efficiency
+- Checksums
+- Data Compression
+- Erasure Coding
