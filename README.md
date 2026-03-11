@@ -262,6 +262,47 @@ For each topic we will provide:
 
 ---
 
+# 18. Containers & Runtime Infrastructure
+
+- Containers
+- Container Images
+- Docker
+- OCI (Open Container Initiative)
+- Container Registries
+- Image Layers
+- Container Networking
+- Container Storage
+- Container Security
+
+- Container Orchestration
+- Kubernetes
+- Kubernetes Pods
+- Kubernetes Deployments
+- Kubernetes Services
+- Kubernetes Ingress
+- Kubernetes Namespaces
+
+- Service Scheduling
+- Auto Healing
+- Rolling Deployments
+- Horizontal Pod Autoscaling
+
+- Init Containers
+- Sidecar Containers
+
+- Infrastructure as Code
+- Immutable Infrastructure
+
+- Kubernetes Operators
+- StatefulSets
+- ConfigMaps
+- Secrets
+- Helm
+- Service Accounts
+- Pod Disruption Budgets
+- Node Affinity
+- Taints and Tolerations
+
 # The 7 Mental Models of Distributed Systems
 
 Almost every large system problem can be understood through these seven lenses.
@@ -370,3 +411,17 @@ Concepts related to this:
 - monitoring
 - alerting
 - distributed tracing
+
+---  
+```
+Users
+↓
+Edge (CDN / DNS / TLS)
+↓
+Compute (containers / serverless)
+↓
+State (databases / queues / storage)
+↓
+Observability & Control
+```
+---  
