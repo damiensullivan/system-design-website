@@ -1,3 +1,6 @@
+We will be building a website which captures the following as a means to demonstrate our knowledge of the following topics.  
+For each topic we will provide:  
+
 - **A definition** and explanation of the concept, what it is and how it works  
 - **An real world analogy** that makes the concept easier to understand  
 - **The benefits, drawbacks and trade-offs** to be aware of when using this technology  
