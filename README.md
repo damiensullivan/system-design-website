@@ -259,3 +259,114 @@ For each topic we will provide:
 - Snapshots
 - Write Amplification
 - Erasure Coding
+
+---
+
+# The 7 Mental Models of Distributed Systems
+
+Almost every large system problem can be understood through these seven lenses.
+
+---
+
+## 1. Everything Eventually Breaks
+Hardware fails, networks drop packets, machines crash.
+
+Design systems assuming:
+- nodes disappear
+- networks partition
+- processes die
+
+Concepts related to this:
+- fault tolerance
+- retries
+- circuit breakers
+- replication
+
+---
+
+## 2. Latency Is the Hidden Cost of Everything
+Every network call adds delay.
+
+Local memory: nanoseconds  
+Disk: microseconds  
+Network: milliseconds  
+
+Systems slow down as they become distributed.
+
+Concepts related to this:
+- caching
+- CDNs
+- load balancing
+- async messaging
+
+---
+
+## 3. Consistency Has a Cost
+Perfect consistency requires coordination.
+
+Coordination slows systems down.
+
+You often must trade between:
+- strong consistency
+- availability
+- performance
+
+Concepts related to this:
+- CAP theorem
+- eventual consistency
+- replication
+
+---
+
+## 4. Data Must Be Partitioned to Scale
+Large systems scale by splitting data across machines.
+
+Concepts related to this:
+- sharding
+- partitioning
+- consistent hashing
+
+Without partitioning, systems eventually hit limits.
+
+---
+
+## 5. Coordination Is Expensive
+Distributed nodes must agree on decisions.
+
+Agreement requires communication and consensus.
+
+Concepts related to this:
+- leader election
+- consensus algorithms
+- quorum
+
+The more coordination you require, the slower the system.
+
+---
+
+## 6. Caching Is the Only Way to Survive Scale
+Most large systems avoid recomputing or refetching data.
+
+Instead they cache aggressively.
+
+Concepts related to this:
+- distributed caches
+- CDNs
+- cache invalidation
+
+Caching dramatically reduces latency and load.
+
+---
+
+## 7. Observability Is Required to Operate Systems
+You cannot fix what you cannot see.
+
+Large systems require insight into:
+- logs
+- metrics
+- traces
+
+Concepts related to this:
+- monitoring
+- alerting
+- distributed tracing
